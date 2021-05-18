@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+    Место где мы делимся личными мудростями
+{% endblock title %}
+{% block content %}
+    <h3>Добро пожаловать любителям поделиться мудростями!</h3>
+    <table>
+        <tr>
+            <td>
+                <a href="{% url 'mainpage' %}">Главная страничка</a>
+            </td>
+            <td>
+                <a href="{% url 'wisdoms.html' %}">Ьудрости</a>
+            </td>
+            <td>
+                <a href="{% url 'reg' %}">Регистрация</a>
+            </td>
+            <td>
+                <a href="{% url 'enter.html' %}">Вход</a>
+            </td>
+
+
+        </tr>
+    </table>
+{% endblock content %}
