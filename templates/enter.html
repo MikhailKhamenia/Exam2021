@@ -5,8 +5,12 @@
     <title>Enter</title>
 </head>
 <body>
-    <form>
-
-    </form>
+    <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+        <input type="submit" value="Send" >
+</form>
 </body>
 </html>
